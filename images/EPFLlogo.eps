@@ -1,0 +1,93 @@
+%!PS-Adobe-2.0 EPSF-3.0
+%%BoundingBox: 75 0 2552 720
+
+/chardict 9 dict dup
+begin
+  /hmoveto {0 rmoveto} def
+  /vmoveto {0 exch rmoveto} def
+  /hlineto {0 rlineto} def
+  /vlineto {0 exch rlineto} def
+  /rrcurveto {
+    6 4 roll 2 copy 8 4 roll 6 2 roll exch 4 1 roll add 3 1 roll add exch
+    2 copy 6 2 roll exch 4 1 roll add 3 1 roll add exch rcurveto
+  } def
+  /vhcurveto {0 5 1 roll 0 rrcurveto} def
+  /hvcurveto {0 exch 5 -1 roll 0 6 2 roll rrcurveto} def
+  /closepath {currentpoint closepath moveto} bind def % simulate "t1" closepath
+  /endchar {moveto rmoveto end} def
+end def
+/hsbw {chardict begin
+   0 currentpoint 5 -1 roll % save currentpoint and width for use in endchar
+   0 rmoveto                % position to left sidebearing
+} def
+
+0 0 moveto
+
+% E
+  75 633 hsbw
+  0 720 rmoveto
+  521 hlineto
+  -132 vlineto
+  -367 hlineto
+  -456 vlineto
+  367 hlineto
+ -132 vlineto
+ -521 hlineto
+  294 vlineto
+  490 hlineto
+  132 vlineto
+  -490 hlineto
+  closepath
+endchar
+% /E
+
+% P
+96 690 hsbw
+  0 0 rmoveto
+  154 hlineto
+  294 vlineto 
+  168 hlineto
+  144 105 74 139 hvcurveto
+  139 -105 74 -144 vhcurveto
+  -322 hlineto
+  closepath
+  154 -132 rmoveto
+  124 hlineto
+  88 51 -20 -61 hvcurveto
+  -61 -51 -20 -88 vhcurveto
+  -124 hlineto 
+  closepath
+endchar
+%/P
+
+% F
+75 633 hsbw
+  0 720 rmoveto
+   521 hlineto
+  -132 vlineto
+  -367 hlineto
+  -588 vlineto
+  -154 hlineto
+   294 vlineto
+   490 hlineto
+  132 vlineto
+  -490 hlineto
+  closepath
+endchar
+% /F
+
+% L
+75 633 hsbw
+  0 720 rmoveto
+  154 hlineto
+  -588 vlineto
+  367 hlineto
+  -132 vlineto
+  -521 hlineto
+  closepath
+endchar
+% /L
+
+%0.890196 0.0235294 0.0745098 setrgbcolor
+1 0 0 setrgbcolor
+fill

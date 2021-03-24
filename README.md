@@ -1,3 +1,5 @@
+This is a modified version by Cyril Picard. Use latexmk with LuaLaTeX or XeLaTeX to compile.
+
 # Template for the EPFL PhD thesis
 
 Welcome to the **unofficial** template for the EPFL PhD thesis. Before starting to write your thesis, have a look at this page: [https://www.epfl.ch/education/phd/regulations/internal-regulations/edoc-faq-end-of-thesis/](https://www.epfl.ch/education/phd/regulations/internal-regulations/edoc-faq-end-of-thesis/). It will give you all mandatory information concerning your thesis. It is also not required for you to use this template. It's only here to help you and remove the struggle to create your own template. 

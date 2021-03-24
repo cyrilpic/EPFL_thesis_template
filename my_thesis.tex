@@ -12,16 +12,35 @@
 \input{head/settings_custom.tex}  % place your custom packages, etc... in this file!
 
 
+\title{FIRST LINE OF TITLE \\ SECOND LINE OF TITLE}
+\author{John Appleseed}
+
+\department{Faculté des sciences et techniques de l'ingénieur}
+\edoc{Programme doctoral en SuperScience}
+\laboratory{Laboratoire de SuperScience}
+
+\jury{Prof SURNAME NAME, président du jury\\
+Prof SURNAME NAME, directeur de thèse\\
+Prof SURNAME NAME, rapporteur\\
+Prof SURNAME NAME, rapporteur\\
+Prof SURNAME NAME, rapporteur%
+}
+
+\thesisno{1234}
+\oraldate{1er avril 1900}
+
+
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%% HEAD: Book-Begin
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{document}
-\setlength{\parindent}{0pt}
-\setlength{\parskip}{0pt} %(needs to be before titlepage and frontmatter to keep the table of contents lists short)
 \frontmatter
-\input{head/titlepage.tex}
-\include{head/dedication}
-\setcounter{page}{0}
+\maketitle 
+
+\begin{dedication}
+    \input{head/dedication}
+\end{dedication}
+
 \include{head/acknowledgements}
 \include{head/preface}
 \include{head/abstracts}
@@ -43,21 +62,12 @@
 % your list of symbols here, if needed.
 
 
-% space before each new paragraph according to the template guidelines.
-%(needs to be after titlepage and frontmatter to keep the table of contents lists short)
-\setlength{\parskip}{1em}
-
-
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%% MAIN: The chapters of the thesis
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \mainmatter
 \include{main/ch1_introduction}
-\cleardoublepage
-\part{Body 1}
 \include{main/ch2_figures_tables}
-\cleardoublepage
-\part{Body 2}
 \include{main/ch3_math}
 \include{main/ch4_more_text}
 
